@@ -1,0 +1,35 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+}
+
+.description {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* モバイル対応: 縦並び */
+@media (max-width: 767px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
